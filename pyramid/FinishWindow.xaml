@@ -1,0 +1,34 @@
+﻿<Window x:Class="pyramid.FinishWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Name="Finish" 
+        Icon="images/pyramid.png" 
+        Title="Результат" Height="500" Width="800" Background="#87CEFA" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Button Name="Exit" Content="Вийти з гри" HorizontalAlignment="Left" Height="38" Margin="240,396,0,0" VerticalAlignment="Top" Width="102" Click="OnExitGameClick" Background="#FFD4DDF7" Foreground="#FF0E0858" FontFamily="Yu Gothic UI Semibold" BorderThickness="0,0,0,0" RenderTransformOrigin="0.544,1.422"/>
+
+        <TextBlock Name="PanelSuccess"  Opacity="0" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="353" Width="800" FontSize="120" Foreground="#FF2D3979" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="LightSkyBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background><Run Text="           "/><LineBreak/><Run Text="        Перемога!"/></TextBlock>
+
+        <TextBlock Name="PanelFailure" Opacity="0" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="353" Width="800" FontSize="120" Foreground="#FF212954" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0C0631"/>
+                    <GradientStop Color="LightSkyBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background><Run Text="           "/><LineBreak/><Run Text="          Програш"/></TextBlock>
+
+        <Button x:Name="NewGame" Content="Нова гра" HorizontalAlignment="Left" Height="38" Margin="459,396,0,0" VerticalAlignment="Top" Width="102" Click="OnRestartGameClick" Background="#FFD4DDF7" Foreground="#FF0E0858" FontFamily="Yu Gothic UI Semibold" BorderThickness="0,0,0,0" RenderTransformOrigin="0.544,1.422"/>
+    </Grid>
+
+</Window>

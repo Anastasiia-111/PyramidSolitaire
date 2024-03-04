@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS0618: Тип или член устарел
+dotnet_diagnostic.CS0618.severity = none
+
+# CS8321: Локальная функция объявлена, но не используется
+dotnet_diagnostic.CS8321.severity = suggestion

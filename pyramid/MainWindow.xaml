@@ -1,0 +1,40 @@
+﻿<Window x:Class="pyramid.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Name="PyramidWindow"
+        Title="Pyramid" Height="600" Width="1000" ResizeMode="NoResize" Background="White" WindowStartupLocation="CenterScreen" >
+
+    <Grid>
+        <Button Content="Розпочати гру" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.219,-0.148" Width="204" Height="47"  Click="OnStartGameClick" FontSize="24" Foreground="#FF41387F" FontFamily="Impact" BorderBrush="#FF1E245A" BorderThickness="0,0,0,0" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD5E4F9"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        
+        <Button Content="Правила гри" HorizontalAlignment="Center" Click="OnShowRulesClick" Margin="0,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.219,-0.148" Width="204" Height="43" FontSize="24" FontFamily="Impact" Foreground="#FF41387F" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD5E4F9"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        
+        <Button Content="Вийти" HorizontalAlignment="Center" Click="OnExitGameClick" Margin="0,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.219,-0.148" Width="204" Height="42" FontSize="24" Foreground="#FF41387F" FontFamily="Impact" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD5E4F9"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        
+    </Grid>
+</Window>
